@@ -10,17 +10,18 @@ public static void main(String args[]) {
 	System.out.println("Guess a number between 1 to 50");
 	a= s.nextInt();
 	
-	if(a>=1 && a<=50){
-			while(flag!=1){
+	if(a>=1 && a<=50)
+	{
+			while(flag!=1)
+			{
 				if(a<number)
-				{flag=0;
+				{
 					System.out.println("Number guessed is less than original number");
 					a= s.nextInt();
 					
 				}
 				else if(a>number)
-				{flag=0;
-					System.out.println("Number guessed is greater than original number");
+				{					System.out.println("Number guessed is greater than original number");
 					a= s.nextInt();
 				 }
 				else
@@ -29,7 +30,9 @@ public static void main(String args[]) {
 					System.out.println("Number guessed is EQUAL to original number");
 				 
 				}
-						}}
+						
+			}
+	}
 	else
 	{System.out.println("OUT OF RANGE");}
 	}
